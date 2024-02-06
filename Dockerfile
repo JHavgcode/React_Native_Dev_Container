@@ -1,7 +1,7 @@
-FROM ubuntu:22.04
+#Starting with this pre-made docker container as a base
+FROM reactnativecommunity/react-native-android:latest
 
 WORKDIR /app
 
-RUN apt update && apt install -y nodejs
-
-ENTRYPOINT ["sh", "-c", "pwd"]
+RUN apt update
+#RUN npm install jest
