@@ -3,5 +3,5 @@ FROM reactnativecommunity/react-native-android:latest
 
 WORKDIR /app
 
-RUN apt update
-#RUN npm install jest
+RUN apt update && apt upgrade -y
+RUN npm install jest
